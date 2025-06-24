@@ -7,10 +7,39 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -22,6 +51,10 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.header-logo {
+  padding: 24px;
+  margin-left: 76px;
+}
 
 .header-logo .logo-part {
   color: #2e2f42;
@@ -30,8 +63,15 @@ a {
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
 .nav-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -41,9 +81,18 @@ a {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts-link {
+  padding: 24px;
+  display: block;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -52,8 +101,17 @@ a {
 
 .hero-banner {
   background: #2e2f42;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+}
+.hero-banner-text {
+  display: flex;
+  align-items: center;
 }
 .hero-title {
+  width: 496px;
+  height: 120px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -61,10 +119,19 @@ a {
   text-align: center;
   color: #fff;
 }
+.button-container {
+}
 .hero-banner-button {
   cursor: pointer;
   background: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--iris);
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
 }
+
 button[type="button"] {
   font-weight: 500;
   font-size: 16px;
@@ -72,6 +139,11 @@ button[type="button"] {
   letter-spacing: 0.04em;
   color: #fff;
 }
+.about-list {
+  display: flex;
+  align-items: center;
+}
+
 .about-title {
   font-weight: 500;
   font-size: 20px;
@@ -100,6 +172,11 @@ button[type="button"] {
   text-transform: capitalize;
   background-color: #f4f4fd;
 }
+.portfolio-list {
+  display: flex;
+  align-items: center;
+}
+
 .portfolio-item {
   background-color: #ffffff;
 }
@@ -128,6 +205,10 @@ button[type="button"] {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+}
+.card-list {
+  display: flex;
+  align-items: center;
 }
 
 .card-title-portfolio {
