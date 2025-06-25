@@ -106,8 +106,9 @@ a {
   margin: 0 auto;
 }
 .hero-banner-text {
-  display: flex;
-  align-items: center;
+  padding-top: 188px;
+  padding-right: 472px;
+  padding-left: 472px;
 }
 .hero-title {
   width: 496px;
