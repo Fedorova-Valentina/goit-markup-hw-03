@@ -133,7 +133,9 @@ img {
   text-align: center;
   color: #fff;
 }
-
+:root {
+  --iris: #4d5ae5;
+}
 .hero-banner-button {
   border: none;
 
@@ -244,6 +246,7 @@ button[type="button"] {
 }
 .card {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .card-title {
   margin-bottom: 72px;
