@@ -106,6 +106,12 @@ img {
 }
 
 .hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 188px 0;
+  text-align: center;
   background: #2e2f42;
   max-width: 1440px;
   height: 600px;
@@ -153,13 +159,25 @@ button[type="button"] {
 .about-team {
   padding: 120px 0;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .about-list {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 .about-item {
-  width: calc((100% - 72px));
+  width: calc((100% - 72px) / 4);
 }
 
 .about-title {
@@ -199,7 +217,7 @@ button[type="button"] {
 }
 
 .portfolio-item {
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
   width: calc((100% - 72px) / 3);
   background-color: #ffffff;
 }
@@ -250,10 +268,11 @@ button[type="button"] {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .card-title-portfolio {
+  text-align: center;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -261,6 +280,7 @@ button[type="button"] {
   color: #2e2f42;
 }
 .card-title-text {
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -271,9 +291,16 @@ button[type="button"] {
   padding: 100px 0;
   background: #2e2f42;
 }
-.logo .footer-logo {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 .page-footer-text {
   max-width: 264px;
